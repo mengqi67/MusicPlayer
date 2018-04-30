@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 12/20px;
+}
+body {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  padding-top: 60px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.wrapper .img-wrapper {
+  width: 50%;
+  height: 0;
+  position: relative;
+  padding-top: 50%;
+  margin: 0 auto;
+}
+.wrapper .img-wrapper .song-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrapper .img-wrapper .song-img img {
+  height: 100%;
+  width: 100%;
+}
+.wrapper .song-info {
+  width: 100%;
+  height: 126px;
+  margin-top: 40px;
+  text-align: center;
+}
+.wrapper .song-info .song-name {
+  color: #fff;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrapper .song-info .singer-name,
+.wrapper .song-info .album-name {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+.wrapper .proccess {
+  display: flex;
+}
+.wrapper .proccess .cur-time,
+.wrapper .proccess .all-time {
+  font-size: 16px;
+  height: 40px;
+  width: 60px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.wrapper .proccess .pro-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.wrapper .proccess .pro-wrapper .pro-bottom,
+.wrapper .proccess .pro-wrapper .pro-top {
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+}
+.wrapper .proccess .pro-wrapper .pro-bottom {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.wrapper .proccess .pro-wrapper .pro-top {
+  background-color: #fff;
+  transform: translateX(-100%);
+}
+.wrapper .proccess .pro-wrapper .pro-top .slider-point {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -9px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .proccess .pro-wrapper .pro-top .slider-point:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.wrapper .song-control {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+.wrapper .song-control .btn {
+  flex: 1;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.wrapper .song-control .like-btn {
+  background-image: url("/img/like.png");
+}
+.wrapper .song-control .prev-btn {
+  background-image: url("/img/prev.png");
+}
+.wrapper .song-control .stop-btn {
+  background-image: url("/img/stop.png");
+}
+.wrapper .song-control .stop-btn.playing {
+  background-image: url("/img/prev.png");
+}
+.wrapper .song-control .next-btn {
+  background-image: url("/img/next.png");
+}
+.wrapper .song-control .list-btn {
+  background-image: url("/img/list.png");
+}

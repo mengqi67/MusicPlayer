@@ -1,0 +1,24 @@
+[
+    {
+        "image":"/source/song_1.jpg",
+        "audio":"/source/Canon.mp3",
+        "song":"Canon",
+        "album" : "The Mantovani Collection",
+        "singer" : "Mantovani",
+        "duration" : 269
+    },{
+        "image":"/source/song_2.jpg",
+        "audio":"/source/伊卡璐斯.mp3",
+        "song":"Icarus",
+        "album" : " The Compilation Album Ivan Torrent",
+        "singer" : "Ivan Torrent",
+        "duration" : 275
+    },{
+        "image":"/source/song_3.jpg",
+        "audio":"/source/九儿.mp3",
+        "song":"九儿",
+        "album" : "红高粱",
+        "singer" : "韩红",
+        "duration" : 153
+    }
+]
